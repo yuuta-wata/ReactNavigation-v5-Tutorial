@@ -5,5 +5,7 @@ module.exports = {
   plugins: ['@typescript-eslint'],
   rules: {
     semi: ['off'],
+    coonmadungle: ['off'],
+    '@typescript-eslint/no-unused-vars': ['warn'],
   },
 }
