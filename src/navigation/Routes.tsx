@@ -5,10 +5,10 @@ import AsyncStorage from '@react-native-community/async-storage'
 
 import { Center } from '../common/Center'
 import { AuthContext } from '../auth/AuthProvider'
-import { AppTabs } from './BottomTab/AppTabs'
 import { AuthStack } from '../auth/AuthStack'
+import { DrawerApp } from './Drawer'
 
-interface Props {}
+interface Props { }
 
 export const Routes: React.FC<Props> = () => {
   const { user } = useContext(AuthContext)
@@ -38,7 +38,7 @@ export const Routes: React.FC<Props> = () => {
 
   return (
     <NavigationContainer>
-      {user ? <AppTabs /> : <AuthStack />}
+      {user ? <DrawerApp /> : <AuthStack />}
     </NavigationContainer>
   )
 }
