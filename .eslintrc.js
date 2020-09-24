@@ -8,6 +8,7 @@ module.exports = {
     'comma-dangle': ['off'],
     '@typescript-eslint/no-unused-vars': ['warn'],
     'react-native/no-inline-styles': ['off'],
-    'prettier/prettier': ['off']
+    'prettier/prettier': ['off'],
+    'eol-last': ['off']
   }
 }
