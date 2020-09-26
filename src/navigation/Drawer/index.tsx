@@ -20,6 +20,7 @@ import { MyFlatList } from '../../components/MyFlatList'
 import { MyRefreshControl } from '../../components/MyRefreshControl'
 import { MyImage } from '../../components/MyImage'
 import { MyKeyboardAvoidingComponent } from '../../components/MyKeyboard'
+import { MyModal } from '../../components/MyModal'
 
 const Drawer = createDrawerNavigator<DrawerProps>()
 
@@ -72,6 +73,7 @@ export const DrawerApp = () => {
         name="MyKeyboard"
         component={MyKeyboardAvoidingComponent}
       />
+      <Drawer.Screen name="MyModal" component={MyModal} />
     </Drawer.Navigator>
   )
 }

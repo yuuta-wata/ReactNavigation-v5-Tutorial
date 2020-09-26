@@ -7,4 +7,5 @@ export type DrawerProps = {
   MyRefrashControl: undefined
   MyImage: undefined
   MyKeyboard: undefined
+  MyModal: undefined
 }
