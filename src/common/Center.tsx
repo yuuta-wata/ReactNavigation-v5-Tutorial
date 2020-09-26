@@ -1,16 +1,21 @@
 import React from 'react'
-import { View } from 'react-native'
+import { StyleProp, View, ViewStyle } from 'react-native'
 
-interface Props {}
+interface Props {
+  style?: StyleProp<ViewStyle>
+}
 
-export const Center: React.FC<Props> = ({ children }) => {
+export const Center: React.FC<Props> = ({ style, children }) => {
   return (
     <View
-      style={{
-        flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center'
-      }}>
+      style={[
+        style,
+        {
+          flex: 1,
+          alignItems: 'center',
+          justifyContent: 'center'
+        }
+      ]}>
       {children}
     </View>
   )
