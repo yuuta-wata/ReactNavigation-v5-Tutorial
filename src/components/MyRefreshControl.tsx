@@ -27,7 +27,7 @@ export const MyRefreshControl = () => {
         refreshControl={
           <RefreshControl
             title="ロード中..."
-            colors={['#ff6347', '#ffc0cb']}
+            colors={['#ff6347', '#ffc0cb', 'green']}
             tintColor="#ff6347"
             titleColor="#ffc0cb"
             refreshing={refreshing}
