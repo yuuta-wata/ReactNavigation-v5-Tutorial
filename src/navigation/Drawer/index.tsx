@@ -19,6 +19,7 @@ import { MyButton } from '../../components/MyButton'
 import { MyFlatList } from '../../components/MyFlatList'
 import { MyRefreshControl } from '../../components/MyRefreshControl'
 import { MyImage } from '../../components/MyImage'
+import { MyKeyboardAvoidingComponent } from '../../components/MyKeyboard'
 
 const Drawer = createDrawerNavigator<DrawerProps>()
 
@@ -67,6 +68,10 @@ export const DrawerApp = () => {
       <Drawer.Screen name="MyFlatList" component={MyFlatList} />
       <Drawer.Screen name="MyRefrashControl" component={MyRefreshControl} />
       <Drawer.Screen name="MyImage" component={MyImage} />
+      <Drawer.Screen
+        name="MyKeyboard"
+        component={MyKeyboardAvoidingComponent}
+      />
     </Drawer.Navigator>
   )
 }
